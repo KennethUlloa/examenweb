@@ -10,19 +10,19 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="bg-black text-white p-3">Contabilidad Personal</h1>
-        <div class="bg-body-secondary pt-2 pb-1 ps-2">
+        <h1 class="bg-black text-white p-3 mb-0">Contabilidad Personal</h1>
+        <div class="bg-body-secondary pt-2 pb-1 ps-2 d-flex flex-row justify-content-center">
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="IngresosController">Ingreso</a></li>
-                <li class="list-inline-item"><a href="GastosController">Egreso</a></li>
-                <li class="list-inline-item"><a href="">Transferencia</a></li>
-                <li class="list-inline-item"><a href="DashboardController">Dashboard</a></li>
+                <li class="list-inline-item"><a href="GestionarMovimientosController?ruta=crearIngreso" class="btn btn-primary">Ingreso</a></li>
+                <li class="list-inline-item"><a href="GestionarMovimientosController?ruta=crearEgreso" class="btn btn-primary">Egreso</a></li>
+                <li class="list-inline-item"><a href="" class="btn btn-primary">Transferencia</a></li>
+                <li class="list-inline-item"><a href="DashboardController" class="btn btn-primary">Dashboard</a></li>
             </ul>
         </div>
 
         <div>
             <h1>Registro de Ingreso ($$)</h1>
-            <form action="IngresosController?ruta=guardarIngreso" method="post">
+            <form action="GestionarMovimientosController?ruta=guardarIngreso" method="post">
                 <fieldset class="d-flex flex-column">
                     <div class="input-group mb-3">
                     	<label class="input-group-text">Categoria Ingreso</label>

@@ -5,6 +5,7 @@ import java.util.List;
 import modelo.dto.CuentaDTO;
 import modelo.entidades.Cuenta;
 import modelo.entidades.CuentaTipo;
+import modelo.entidades.Movimiento;
 
 public interface CuentaDAO extends GenericDAO<Cuenta, Integer> {
 

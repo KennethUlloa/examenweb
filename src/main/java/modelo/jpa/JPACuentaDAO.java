@@ -10,6 +10,7 @@ import modelo.dao.CuentaDAO;
 import modelo.dto.CuentaDTO;
 import modelo.entidades.Cuenta;
 import modelo.entidades.CuentaTipo;
+import modelo.entidades.Movimiento;
 
 
 public class JPACuentaDAO extends JPAGenericDAO<Cuenta, Integer> implements CuentaDAO {
@@ -60,9 +61,5 @@ public class JPACuentaDAO extends JPAGenericDAO<Cuenta, Integer> implements Cuen
 		query.setParameter("tipo", tipo);
 		return query.getResultList();
 	}
-
-
-	
-	
 
 }
