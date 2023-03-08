@@ -28,10 +28,32 @@ public class TestEntityManager {
 		c.setTotal(c.getTotal() + valor);
 		
 		DAOFactory.getFactory().getMovimientoDAO().create(m);
-		DAOFactory.getFactory().getCuentaDAO().update(c);*/
+		DAOFactory.getFactory().getCuentaDAO().update(c);
 		List<?> mov = DAOFactory.getFactory().getMovimientoDAO().getMovimientosDeCuenta(1, 3);
-		System.out.println(mov);
-
+		System.out.println(mov);*/
+		
+		Cuenta c = new Cuenta();
+		c.setNombre("NÓMINA");
+		c.setTipo(CuentaTipo.INGRESO);
+		c.setTotal(0);
+		
+		Cuenta c1 = new Cuenta();
+		c1.setNombre("EFECTIVO");
+		c1.setTipo(CuentaTipo.INGRESOGASTO);
+		c1.setTotal(0);
+		
+		Cuenta c2 = new Cuenta();
+		c2.setNombre("UNIVERSIDAD");
+		c2.setTipo(CuentaTipo.GASTO);
+		c2.setTotal(0);
+		
+		DAOFactory.getFactory().getCuentaDAO().create(c);
+		DAOFactory.getFactory().getCuentaDAO().create(c1);
+		DAOFactory.getFactory().getCuentaDAO().create(c2);
+		
+		
 	}
+		
+		;
 
 }
